@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"gpio_out\main.o"
+"gpio_out\stm32f4xx_it.o"
+"gpio_out\stm32f4xx_hal_msp.o"
+"gpio_out\my_lis3dsh.o"
+"gpio_out\stm32f4xx_hal_spi.o"
+"gpio_out\stm32f4xx_hal_tim.o"
+"gpio_out\stm32f4xx_hal_tim_ex.o"
+"gpio_out\stm32f4xx_hal_rcc.o"
+"gpio_out\stm32f4xx_hal_rcc_ex.o"
+"gpio_out\stm32f4xx_hal_flash.o"
+"gpio_out\stm32f4xx_hal_flash_ex.o"
+"gpio_out\stm32f4xx_hal_flash_ramfunc.o"
+"gpio_out\stm32f4xx_hal_gpio.o"
+"gpio_out\stm32f4xx_hal_dma_ex.o"
+"gpio_out\stm32f4xx_hal_dma.o"
+"gpio_out\stm32f4xx_hal_pwr.o"
+"gpio_out\stm32f4xx_hal_pwr_ex.o"
+"gpio_out\stm32f4xx_hal_cortex.o"
+"gpio_out\stm32f4xx_hal.o"
+"gpio_out\startup_stm32f407xx.o"
+"gpio_out\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "GPIO_Out\GPIO_Out.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_Out.map" -o GPIO_Out\GPIO_Out.axf
